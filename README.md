@@ -1,4 +1,4 @@
-# Trabajo Práctico N°1 - Desarrollo de Sistemas Orientados a Objetos
+# DSOO TP1
 
 Este proyecto es parte del **Trabajo Práctico N°1** de la materia **Desarrollo de Sistemas Orientados a Objetos**. Se trata de una aplicación de consola desarrollada en **C#** que simula la gestión de socios en un club deportivo, permitiendo registrar socios y asignarles actividades deportivas.
 
