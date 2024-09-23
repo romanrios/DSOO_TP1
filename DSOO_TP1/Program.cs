@@ -81,13 +81,13 @@ public class Program
         club.altaSocio(1, "Juan Perez");
         club.altaSocio(2, "Maria Lopez");
 
-        Console.WriteLine(club.inscribirActividad(1, "Futbol"));  // INSCRIPCIÓN EXITOSA
-        Console.WriteLine(club.inscribirActividad(1, "Natacion"));  // INSCRIPCIÓN EXITOSA
-        Console.WriteLine(club.inscribirActividad(1, "Basquet"));  // INSCRIPCIÓN EXITOSA
-        Console.WriteLine(club.inscribirActividad(1, "Basquet"));  // TOPE DE ACTIVIDADES ALCANZADO
+        Console.WriteLine(club.inscribirActividad(1, "Futbol"));
+        Console.WriteLine(club.inscribirActividad(1, "Natacion"));
+        Console.WriteLine(club.inscribirActividad(1, "Basquet"));
+        Console.WriteLine(club.inscribirActividad(1, "Basquet"));
 
-        Console.WriteLine(club.inscribirActividad(3, "Futbol"));  // SOCIO INEXISTENTE
+        Console.WriteLine(club.inscribirActividad(3, "Futbol"));
 
-        Console.WriteLine(club.inscribirActividad(1, "Tenis"));  // ACTIVIDAD INEXISTENTE
+        Console.WriteLine(club.inscribirActividad(1, "Tenis"));
     }
 }
