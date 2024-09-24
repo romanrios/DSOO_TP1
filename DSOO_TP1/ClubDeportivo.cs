@@ -7,12 +7,12 @@ namespace DSOO_TP1
     internal class ClubDeportivo
     {
         private List<Socio> socios;
-        private List<string> actividades;
+        private List<string> actividadesDisponibles;
 
         public ClubDeportivo()
         {
             socios = new List<Socio>();
-            actividades = new List<string> { "Futbol", "Basquet", "Natacion" };
+            actividadesDisponibles = new List<string> { "Futbol", "Basquet", "Natacion" };
         }
 
         public void altaSocio(int id, string nombre)
@@ -30,9 +30,9 @@ namespace DSOO_TP1
             }
         }
 
-        public string inscribirActividad(int idSocio, string nombreActividad)
+        public string inscribirSocioEnActividad(int idSocio, string nombreActividad)
         {
-            if (!actividades.Contains(nombreActividad))
+            if (!actividadesDisponibles.Contains(nombreActividad))
             {
                 return "ACTIVIDAD INEXISTENTE";
             }
@@ -43,12 +43,12 @@ namespace DSOO_TP1
                 return "SOCIO INEXISTENTE";
             }
 
-            if (socio.actividades.Count >= 3)
+            if (socio.actividadesInscriptas.Count >= 3)
             {
                 return "TOPE DE ACTIVIDADES ALCANZADO";
             }
 
-            socio.AgregarActividad(nombreActividad);
+            socio.sumarActividadASocio(nombreActividad);
             return "INSCRIPCIÓN EXITOSA";
         }
     }

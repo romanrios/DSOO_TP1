@@ -7,18 +7,18 @@ namespace DSOO_TP1
     {
         public int idSocio { get; set; }
         public string nombre { get; set; }
-        public List<string> actividades { get; set; }
+        public List<string> actividadesInscriptas { get; set; }
 
         public Socio(int id, string nombre)
         {
             this.idSocio = id;
             this.nombre = nombre;
-            this.actividades = new List<string>();
+            this.actividadesInscriptas = new List<string>();
         }
 
-        public void AgregarActividad(string nombreActividad)
+        public void sumarActividadASocio(string nombreActividad)
         {
-            actividades.Add(nombreActividad);
+            actividadesInscriptas.Add(nombreActividad);
         }
     }
 }
